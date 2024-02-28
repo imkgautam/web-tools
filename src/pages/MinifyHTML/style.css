@@ -1,0 +1,90 @@
+.fixed-button-container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1;
+  }
+  
+  .mdc-fab {
+    position: relative;
+  
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    overflow: hidden;
+  
+    border-width: 0;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  
+    background-color: #2ecc71;
+    color: #ecf0f1;
+  
+    transition: background-color 0.3s;
+  }
+  
+  .mdc-fab:hover,
+  .mdc-fab:focus {
+    background-color: #27ae60;
+  }
+  
+  .mdc-fab > * {
+    position: relative;
+  }
+  
+  .mdc-fab span {
+    display: block;
+    padding: 12px 24px;
+  }
+  
+  .mdc-fab:before {
+    content: "";
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    display: block;
+    width: 0;
+    padding-top: 0;
+  
+    border-radius: 100%;
+  
+    background-color: rgba(236, 240, 241, 0.3);
+  
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .mdc-fab:active:before {
+    width: 120%;
+    padding-top: 120%;
+  
+    transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+  }
+  
+  .mdc-fab.orange {
+    background-color: #e67e22;
+  }
+  
+  .mdc-fab.orange:hover,
+  .mdc-fab.orange:focus {
+    background-color: #d35400;
+  }
+  
+  .mdc-fab.red {
+    background-color: #bd081c;
+  }
+  
+  .mdc-fab.red:hover,
+  .mdc-fab.red:focus {
+    background-color: #c8232c;
+  }
+  
