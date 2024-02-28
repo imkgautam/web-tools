@@ -1,0 +1,63 @@
+# .gitignore
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Cache
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# Credentials
+.npmrc
+.yarnrc
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.tgz
+*.tar.gz
+*.tar
+
+# yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# local env files
+.env.local
+.env.*.local
+
+# Other
+.DS_Store
+.env.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
